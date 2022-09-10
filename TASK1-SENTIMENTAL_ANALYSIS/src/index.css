@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;800&display=swap');
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Mukta', sans-serif;
+}
+
+.app{
+  width: 100vw;
+  height: 100vh;
+}
+
+.analyzer-container{
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  padding: 35px 0px;
+  position: relative;
+}
+
+.wrapper{
+  width: 95%;
+  max-width: 800px;
+  height: 50vh;
+  margin: 0 auto;
+  font-size: clamp(1rem, 0.3676rem + 1.7647vw, 1.25rem);
+  font-weight: 300;
+}
+
+.wrapper h1{
+  font-size: clamp(1.75rem, 0.0588rem + 5.8824vw, 3rem);
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.wrapper textarea{
+  resize: none;
+  width: 100%;
+  max-width: 100%;
+  height: 80%;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.05);
+  font-size: 1rem;
+  color: white;
+  padding: 12px;
+  word-spacing: 1px;
+  outline: none;
+  border:1px rgba(255, 255, 255, 0.5);
+  margin: 15px auto;
+
+  /* make scrollbar thinner in firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #007bff transparent;
+}
+
+.button-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.button-group button{
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  min-width: 4.625rem;
+  min-height: 2.5rem;
+  padding: 0 1em;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.analyzeBtn{
+  background-image: linear-gradient(180deg,#09e52e,#05db33);
+}
+
+.analyzeBtn:hover{
+  background-image: none;
+  border: 1px solid #09e52e;
+  color: #05db33;
+}
+
+.clearBtn{
+  background-image: linear-gradient(180deg,#e50914,#db0510);
+}
+
+.clearBtn:hover{
+  background-image: none;
+  border: 1px solid #e50914;
+  color: #db0510;
+}
