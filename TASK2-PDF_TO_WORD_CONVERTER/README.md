@@ -1,12 +1,9 @@
 # PDF To Word Converter
 
 ## About Project
-This is a simple PDF to Word converter website project that is built using React in the Frontend and Node Js at Backend.
-
-
+This is a simple PDF to Word converter website project that is built using React, NodeJs and Express.
 
 ## Project Preview
-
 
 
 ## Installation Guide
@@ -27,4 +24,4 @@ cd ..
 cd server
 npm install
 ```
-
+Now inside the 
