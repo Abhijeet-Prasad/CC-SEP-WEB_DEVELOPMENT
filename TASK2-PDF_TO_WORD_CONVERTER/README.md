@@ -15,14 +15,16 @@ The very basic requirement for this project is that NodeJs should be installed o
 Next open the Folder TASK2-PDF_TO_WORD_CONVERTER in your VS Code. (or Terminal)
 In VSCode open new terminal and run the following commands 
 
+### Downloading Client Side Dependencies
 ```termianl
 cd client
-```
-```terminal
-nmp install
+npm install
 ```
 
+### Downloading Server Side Dependencies
 ```terminal
 cd ..
+cd server
+npm install
 ```
 
