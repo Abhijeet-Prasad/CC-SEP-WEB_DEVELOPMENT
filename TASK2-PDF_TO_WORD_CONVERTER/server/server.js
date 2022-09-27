@@ -4,13 +4,7 @@ const { PDFNet } = require('@pdftron/pdfnet-node');
 const fsPromises = require("fs/promises");
 const dotenv = require("dotenv")
 const cors = require('cors');
-const fs = require('fs')
 
-const DIR = './ConvertedFiles'
-
-if(!fs.existsSync(DIR)){
-  fs.mkdirSync(DIR)
-}
 dotenv.config()
 
 const app = express();
@@ -31,7 +25,7 @@ async function convertFile() {
 
     wordFile = file.name.substring(0,file.name.lastIndexOf('.')) + '.docx'
 
-    await PDFNet.Convert.fileToWord(`${__dirname}/${file.name}`, `${__dirname}/ConvertedFiles/${wordFile}`)
+    await PDFNet.Convert.fileToWord(`${__dirname}/${file.name}`, `${__dirname}/${wordFile}`)
 }
 
 
@@ -64,7 +58,7 @@ app.post('/ConvertToWord', async (req, res) => {
     await PDFNet.runWithCleanup(convertFile, process.env.MY_API);
 
     deleteFile(`${__dirname}/${file.name}`)
-    res.download(`${__dirname}/ConvertedFiles/${wordFile}`, wordFile)
+    res.download(`${__dirname}/${wordFile}`, wordFile)
 });
 
 app.listen(5000, () => console.log('Server Started'));
