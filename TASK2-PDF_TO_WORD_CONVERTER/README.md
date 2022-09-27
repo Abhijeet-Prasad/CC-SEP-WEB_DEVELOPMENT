@@ -3,25 +3,36 @@
 ## About Project
 This is a simple PDF to Word converter website project that is built using React, NodeJs and Express.
 
-## Project Preview
-
-
-## Installation Guide
-The very basic requirement for this project is that NodeJs should be installed on your system. Next you can go ahead and clone the repo on your system or download the zip file and extract it in your system.
-
-Next open the Folder TASK2-PDF_TO_WORD_CONVERTER in your VS Code. (or Terminal)
-In VSCode open new terminal and run the following commands 
-
-### Downloading Client Side Dependencies
-```termianl
+## Setup Instructions
+-	Node.js  should be install in your system to run the application.
+-	Download the code from the repository to your system.
+-	Open terminal and change directory to point to the PDF_TO_WORD_CONVERTER folder
+-	Now run the following command on terminal to install client-side dependencies
+```
 cd client
 npm install
 ```
-
-### Downloading Server Side Dependencies
-```terminal
-cd ..
-cd server
+-	After all the dependencies are installed run the following commands to install server-side dependencies
+```
+cd ../server
 npm install
 ```
-Now inside the 
+-	After all the dependencies are installed run the following command to start the application
+```
+npm install
+```
+-	Next you will also need a PDFTRON API KEY. Visit the link below to get free Demo Key.
+ 
+    https://www.pdftron.com/documentation/nodejs/get-started/integration/
+-	After getting your API key navigate to the server folder inside the Project folder and open .env file replace the text YOUR_API_KEY with your PTFTRON API KEY and save the file.
+```
+MY_API = YOUR_API_KEY
+```
+-	You also need to download Structured Output Module for your system from the following link
+
+    https://www.pdftron.com/documentation/nodejs/info/modules/#structured-output-module
+-	Once the Structured Output Module is downloaded extract the contents and copy or move the content to the lib folder inside the server folder.
+-	Now simply run the following command to start the application
+```
+npm run dev
+```
