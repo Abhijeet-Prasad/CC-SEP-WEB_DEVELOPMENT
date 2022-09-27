@@ -32,7 +32,7 @@ MY_API = YOUR_API_KEY
 
     https://www.pdftron.com/documentation/nodejs/info/modules/#structured-output-module
 -	Once the Structured Output Module is downloaded extract the contents and copy or move the content to the lib folder inside the server folder.
--	Now simply run the following command to start the application
+-	Now simply run the following command to start the application (inside of the server folder) 
 ```
 npm run dev
 ```
