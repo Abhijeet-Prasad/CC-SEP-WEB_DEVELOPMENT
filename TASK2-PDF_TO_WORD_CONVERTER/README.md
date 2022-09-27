@@ -20,10 +20,11 @@ npm install
 -	Next you will also need a PDFTRON API KEY. Visit the link below to get free Demo Key.
  
     https://www.pdftron.com/documentation/nodejs/get-started/integration/
--	After getting your API key navigate to the server folder inside the Project folder and open .env file replace the text YOUR_API_KEY with your PTFTRON API KEY and save the file.
+-	After getting your API key navigate to the server folder inside the Project folder and open API.env file replace the text YOUR_API_KEY with your PTFTRON API KEY and save the file.
 ```
 MY_API = YOUR_API_KEY
 ```
+- Rename API.env file to .env
 -	You also need to download Structured Output Module for your system from the following link
 
     https://www.pdftron.com/documentation/nodejs/info/modules/#structured-output-module
