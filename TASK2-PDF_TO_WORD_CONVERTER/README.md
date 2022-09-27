@@ -12,13 +12,9 @@ This is a simple PDF to Word converter website project that is built using React
 cd client
 npm install
 ```
--	After all the dependencies are installed run the following commands to install server-side dependencies
+-	After installing client-side dependencies next run the following commands to install server-side dependencies
 ```
 cd ../server
-npm install
-```
--	After all the dependencies are installed run the following command to start the application
-```
 npm install
 ```
 -	Next you will also need a PDFTRON API KEY. Visit the link below to get free Demo Key.
@@ -31,7 +27,7 @@ MY_API = YOUR_API_KEY
 -	You also need to download Structured Output Module for your system from the following link
 
     https://www.pdftron.com/documentation/nodejs/info/modules/#structured-output-module
--	Once the Structured Output Module is downloaded extract the contents and copy or move the content to the lib folder inside the server folder.
+-	Once the Structured Output Module is downloaded extract the contents and copy or move the content to the lib folder inside the server folder (if lib folder is not present create new folder named lib).
 -	Now simply run the following command to start the application (inside of the server folder) 
 ```
 npm run dev
